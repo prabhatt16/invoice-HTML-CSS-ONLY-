@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="book">
+      <div class="page">
+        <div class="subpage">
+          <div class="header">
+            <img src="logo.png" alt="logoImage" />
+            <div class="orderNo">
+              <p>Work Order No</p>
+              <img src="barcode.png" alt="orderImage" />
+              <p>12312323</p>
+            </div>
+          </div>
+          <br />
+          <div class="detailsCard">
+            <div class="detailsLeft">
+              <div class="left_heading">
+                <p>Customer Name :</p>
+                <p>Project Manager :</p>
+                <p>Customer ID :</p>
+                <p>Product SKU :</p>
+                <p>Product Name :</p>
+              </div>
+              <div class="right_heading">
+                <p>Apple Computers Inc</p>
+                <p>Daniel Radcliff</p>
+                <p>0012342</p>
+                <p>287</p>
+                <p>iMac 2020</p>
+              </div>
+            </div>
+
+            <div class="detailsRight">
+              <div class="left_heading">
+                <p>Created On :</p>
+                <p>Time :</p>
+                <p>Created By :</p>
+                <p>Quantity :</p>
+              </div>
+              <div class="right_heading">
+                <p>2/12/2021</p>
+                <p>12:43 PM</p>
+                <p>Martha Struart</p>
+                <p>5005</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>SKU</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>QTY</th>
+                  <th>Image</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="midTr">
+                  <td>123</td>
+                  <td>RAM</td>
+                  <td>
+                    ALKETRON Quantum-Cache (Extreme Gaming Memory) | Long-DIMM
+                    (UDIMM)
+                  </td>
+                  <td>5005</td>
+                  <td>
+                    <img class="itemImage" src="ram.jpg" alt="picImage" />
+                  </td>
+                </tr>
+                <tr class="midTr">
+                  <td>584</td>
+                  <td>SSD</td>
+                  <td>
+                    Western Digital WD Green 240 GB 2.5 inch (6.3 cm) SATA
+                  </td>
+                  <td>5005</td>
+                  <td>
+                    <img class="itemImage" src="ssd.jpg" alt="picImage" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br />
+          <br />
+          <div class="remark">
+            <p>Remarks:</p>
+          </div>
+          <br />
+          <div class="">
+            <button
+              id="ifmcontentstoprint"
+              type="button"
+              class="btn"
+              onclick="myFunction()"
+            >
+              Print
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      window.print();
+    }
+  </script>
+</html>
